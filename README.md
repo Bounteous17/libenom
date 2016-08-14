@@ -8,6 +8,6 @@ Libenom is a tool created for make more easy and fast the creation of payloads w
 
 Getting Started:
 
-git clone https://github.com/bounteous/libenom.git
-cd libenom
-chmod +x libenom.py
+git clone https://github.com/bounteous/libenom.git <br/>
+cd libenom<br/>
+chmod +x libenom.py<br/>
