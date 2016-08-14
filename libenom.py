@@ -288,7 +288,7 @@ if args.listener:
     listener()
 
 else: #mv all the files generated to outfiles folder
-    move = 'mv $(ls -I "profiles.csv" -I "libenom.py" -I "banner.py" -I "outfiles" -I "__pycache__" -I "temp" -I "community.txt") outfiles'
+    move = 'mv $(ls -I "profiles.csv" -I "libenom.py" -I "banner.py" -I "outfiles" -I "__pycache__" -I "temp" -I "community.txt" -I "LICENSE" -I "README.md") outfiles'
     subprocess.Popen(move,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 
 
