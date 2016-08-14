@@ -8,8 +8,6 @@ Libenom is a tool created for make more easy and fast the creation of payloads w
 
 <hr/>
 
-<g-emoji alias="exclamation" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png"><img class="emoji" title=":exclamation:" alt=":exclamation:" height="20" width="20" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png"></g-emoji>
-
 <img class="emoji" title=":exclamation:" alt=":exclamation:" height="20" width="20" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png"></g-emoji> Requirements</h2>
 
 <li><p>A linux distribution for pentesting or Ubuntu, Debian, Mint) </p></li>
