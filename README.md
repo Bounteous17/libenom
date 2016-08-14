@@ -21,3 +21,9 @@ How it works:
 Execute "./libenom.py" to show all the options. For example you can first create a profile named "profile1" with "-c" option and asign it to the msfvenom parameters 
 
 ![captura de pantalla de 2016-08-14 17-48-40](https://cloud.githubusercontent.com/assets/16175933/17650180/624cd6a2-6247-11e6-9a50-a1d03d4b9745.png)
+
+After that you can execute it "./libenom.py -x profile1", delete it "-d" or read "-r"
+
+Also you have some precreated msfconsole listeners for a "reverse_tcp" conexion
+
+![captura de pantalla de 2016-08-14 17-53-03](https://cloud.githubusercontent.com/assets/16175933/17650201/f9236ae6-6247-11e6-8b2f-c528bdb5788a.png)
