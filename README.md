@@ -13,3 +13,9 @@ Getting Started:
 git clone https://github.com/bounteous/libenom.git <br/>
 cd libenom<br/>
 chmod +x libenom.py<br/>
+
+<hr/>
+
+How it works:
+
+Execute "./libenom.py" to show all the options. For example you can first create a profile named "profile1" with "-c" option and asign it to the msfvenom parameters 
