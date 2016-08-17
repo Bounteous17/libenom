@@ -183,10 +183,10 @@ def listener(): #create a fast meterpreter listener
         print(tcolors.SKY+"""
         ********** All Categories **********
 
-        [-] Liseners for payload Windows [-]
-        [-] Liseners for payload Linux   [-]
-        [-] Liseners for payload OSX     [-]
-        [-] Liseners for payload Android [-]
+        [-] Listeners for payload Windows [-]
+        [-] Listeners for payload Linux   [-]
+        [-] Listeners for payload OSX     [-]
+        [-] Listeners for payload Android [-]
 
         """+tcolors.WARNING+"Ex. Usage: './libenom.py -l windows'\n "+tcolors.ENDC)
 
