@@ -40,4 +40,4 @@ Also you have some pre created msfconsole listeners for a "reverse_tcp" conexion
 <span class="mega-octicon octicon-bug"></span> Versions Log
 
 <h2>v-1.0.1</h2>
-<li><p>Added new option to <br>edit</br> IDs</p></li>
+<li><p>Added new option to <b>edit</b> IDs</p></li>
