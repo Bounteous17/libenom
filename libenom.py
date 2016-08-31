@@ -8,7 +8,7 @@ import time
 from banner import header,checker
 
 author = "By: @bounteous17"
-version = "1.0.0"
+version = "1.0.1"
 
 class tcolors: #terminal colors
     GRAY = '\033[90m'
@@ -39,6 +39,9 @@ delete.add_argument('-d', '--delete', help="Delete a user profile ex: './libenom
 
 execute = parser.add_argument_group('[Execute]')
 execute.add_argument('-x', '--execute', type=str, help="Execute a precreated profile ex: './libenom.py -x profilename'")
+
+edit = parser.add_argument_group('[Edit]')
+edit.add_argument('-e', '--edit', type=str, help="Edit precreated IDs")
 
 crex = parser.add_argument_group('[Create-and-execute]')
 crex.add_argument('-cX', '--crex', help="Create a user profile and execute it on the same moment ex: './libenom.py -cX profilename'")
@@ -126,6 +129,17 @@ def loader(): #read the information
     except:
         sys.exit(tcolors.FAIL+"\n[!] The profile "+loader.e+" is not in list\n"+tcolors.ENDC)
 
+def delete():
+	for d in p_name.split(','):
+		os.system('cp profiles.csv /tmp/profiles.csv.bak')
+		with open('/tmp/profiles.csv.bak') as infile, open('profiles.csv', 'w') as outfile:
+			d = str(d)
+			reader = csv.reader(infile)
+			writer = csv.writer(outfile)
+			newrows = (row for row in reader if row[0] != d)
+			writer.writerows(newrows)
+			infile.close()
+			outfile.close()
 
 def executioner(): #execute the parameters for msfvenom
     executioner.count = 1
@@ -221,22 +235,19 @@ if args.create:
 if args.delete:
     print (tcolors.WARNING+"\nOption selected: [Delete]\n"+tcolors.ENDC)
     p_name = args.delete
-    for d in p_name.split(','):
-        os.system('cp profiles.csv /tmp/profiles.csv.bak')
-        with open('/tmp/profiles.csv.bak') as infile, open('profiles.csv', 'w') as outfile:
-            d = str(d)
-            reader = csv.reader(infile)
-            writer = csv.writer(outfile)
-            newrows = (row for row in reader if row[0] != d)
-            writer.writerows(newrows)
-            infile.close()
-            outfile.close()
+    delete()
 
 if args.execute:
     print (tcolors.WARNING+"\nOption selected: [Execute]\n"+tcolors.ENDC)
     p_name = args.execute
     executioner()
     info()
+    
+if args.edit:
+	print (tcolors.WARNING+"\nOption selected: [Edit]\n"+tcolors.ENDC)
+	p_name = args.edit
+	delete()
+	creator()
 
 if args.crex:
     print (tcolors.WARNING+"\nOption selected: [Create-and-execute]\n"+tcolors.ENDC)

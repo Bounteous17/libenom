@@ -35,3 +35,9 @@ Also you have some pre created msfconsole listeners for a "reverse_tcp" conexion
 
 ![captura de pantalla de 2016-08-17 19-21-25](https://cloud.githubusercontent.com/assets/16175933/17746318/d4b0ed54-64af-11e6-985d-2199923c35c8.png)
 
+<hr/>
+
+<span class="mega-octicon octicon-bug"></span> Versions Log
+
+<h2>v-1.0.1</h2>
+<li><p>Added new option to <br>edit</br> IDs</p></li>
