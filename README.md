@@ -37,7 +37,7 @@ Also you have some pre created msfconsole listeners for a "reverse_tcp" conexion
 
 <hr/>
 
-<img src="http://www.vorarlbergernachrichten.at/SysRes/VNSkin/Groups/Paywall/info.png" alt="32"> Versions Log
+<img src="http://www.vorarlbergernachrichten.at/SysRes/VNSkin/Groups/Paywall/info.png" height="32" width="32"> Versions Log
 
 <h2>v-1.0.1</h2>
 <li><p>Added new option to <b>edit</b> IDs</p></li>
